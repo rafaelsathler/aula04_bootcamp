@@ -58,3 +58,53 @@
 #precos = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
 #total = sum(precos[item] for item in lista_compras)
 #print(f"Preço total: {total}")
+
+# 6 - Objetivo: Dada uma lista de emails, remover todos os duplicados.
+
+#lista_emails: list = ["rafael@com.br", "vera@com.br", "vera@com.br"]
+#lista_emails = list(dict.fromkeys(lista_emails))
+#print(lista_emails)
+
+#emails = ["user@example.com", "admin@example.com", "user@example.com", "manager@example.com"]
+#emails_unicos = list(set(emails))
+
+#print(emails_unicos)
+
+# 7 - Objetivo: Dada uma lista de idades, filtrar apenas aquelas que são maiores ou iguais a 18.
+#import random
+
+#idade = []
+#idade = random.sample(range(1, 50), 7)
+#lista_idade = []
+
+#print(idade)
+#for i in idade:
+#    if i >= 18:
+#        lista_idade.append(i)
+#    else:
+#        next
+#print(lista_idade)
+
+#ou
+#idades = [22, 15, 30, 17, 18]
+#idades_validas = [idade for idade in idades if idade >= 18]
+
+#print(idades_validas)
+
+# 8 - Objetivo: Dada uma lista de dicionários representando pessoas, ordená-las pelo nome.
+
+#lista: list = [
+#    {"nome": "Rafael", "idade": 34},
+#    {"nome": "Luan", "idade": 25},
+#    {"nome": "Gabriel", "idade": 12}
+#]
+
+#lista.sort(key=lambda pessoa: pessoa["nome"])
+#print(lista)
+
+# 9 - Objetivo: Dado um conjunto de números, calcular a média.
+
+list_num = [*range(1,11)]
+print(list_num)
+media = sum(list_num) / len(list_num)
+print(f"a soma é {sum(list_num)}, o total de num é {len(list_num)}. Totalizando a média de {media}" )
