@@ -104,7 +104,59 @@
 
 # 9 - Objetivo: Dado um conjunto de números, calcular a média.
 
-list_num = [*range(1,11)]
-print(list_num)
-media = sum(list_num) / len(list_num)
-print(f"a soma é {sum(list_num)}, o total de num é {len(list_num)}. Totalizando a média de {media}" )
+#list_num = [*range(1,11)]
+#print(list_num)
+#media = sum(list_num) / len(list_num)
+#print(f"a soma é {sum(list_num)}, o total de num é {len(list_num)}. Totalizando a média de {media}" )
+
+# 10 - Objetivo: Dada uma lista de valores, dividir em duas listas: uma para valores pares e outra para ímpares
+
+#lista_dados: int = [*range(1,11)]
+
+#pares = [valor for valor in lista_dados if valor % 2 == 0]
+#impar = [valor for valor in lista_dados if valor % 2 != 0]
+#resultado: list = []
+#resultado.append(pares)
+#resultado.append(impar)
+
+#print(resultado)
+
+# 11 - Dada uma lista de dicionários representando produtos, atualizar o preço de um produto específico.
+
+#produtos = [
+#    {"id": 1, "nome": "teclado", "valor": 100}, 
+#    {"id": 2, "nome": "mouse", "valor": 50}, 
+#    {"id": 3, "nome": "headphone", "valor": 200}, 
+#]
+
+#for produto in produtos:
+
+#    if produto["id"] == 2:
+#        produto["valor"] = 300
+
+#print(produtos)
+
+#12 - Dados dois dicionários, fundi-los em um único dicionário.
+
+#dic_01 = {"a": 1,"b": 1500}
+#dic_02 = {'c': 2,"d": 800}
+#consolidado = {**dic_01, **dic_02}
+#print(consolidado)
+
+#dic_02.update(dic_01)
+#print(dic_02)
+
+#13- Dado um dicionário de estoque de produtos, filtrar aqueles com quantidade maior que 0.
+
+#estoque: dict = {"mouse": 30, "teclado": 100, "monitor": 0}
+
+#estoque_acima = {produto: quantidade for produto, quantidade in estoque.items() if quantidade > 0}
+#print(estoque_acima)
+
+#14 - Dado um dicionário, criar listas separadas para suas chaves e valores.
+
+dicionario = {"a": 1, "b": 2, "c": 3}
+chaves = list(dicionario.keys())
+valores = list(dicionario.values())
+print(chaves)
+print(valores)
