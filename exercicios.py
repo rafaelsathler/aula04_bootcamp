@@ -155,8 +155,22 @@
 
 #14 - Dado um dicionário, criar listas separadas para suas chaves e valores.
 
-dicionario = {"a": 1, "b": 2, "c": 3}
-chaves = list(dicionario.keys())
-valores = list(dicionario.values())
-print(chaves)
-print(valores)
+#dicionario = {"a": 1, "b": 2, "c": 3}
+#chaves = list(dicionario.keys())
+#valores = list(dicionario.values())
+#print(chaves)
+#print(valores)
+
+#15 - Dada uma string, contar a frequência de cada caractere usando um dicionário.
+
+test = "jornada de dados"
+test_ajust = test.replace(" ", "")
+freq = {}
+
+for i in test_ajust:
+    if i in freq:
+        freq[i] += 1
+    else:
+        freq[i] = 1
+
+print(f"A contagem dos caracteres é: {freq}")
